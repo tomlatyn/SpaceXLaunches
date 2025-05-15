@@ -20,7 +20,7 @@ extension LaunchListViewController: UITableViewDataSource, UITableViewDelegate {
         
         var content = cell.defaultContentConfiguration()
         content.text = launch.name
-        content.secondaryText = launch.dateLocal?.formatted(date: .numeric, time: .shortened) ?? "No launch date"
+        content.secondaryText = launch.dateLocal?.formatted(date: .numeric, time: .shortened) ?? R.string.localizable.launch_date_placeholder()
         cell.contentConfiguration = content
         
         return cell

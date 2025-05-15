@@ -44,6 +44,8 @@
 		E2C1D8312DD6588E00F76113 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8302DD6588E00F76113 /* ErrorView.swift */; };
 		E2C1D8332DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8322DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift */; };
 		E2C1D8352DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8342DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift */; };
+		E2C1D8382DD66E5F00F76113 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E2C1D8372DD66E5F00F76113 /* RswiftLibrary */; };
+		E2C1D8402DD66F8200F76113 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2C1D83E2DD66F8200F76113 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,7 @@
 		E2C1D8302DD6588E00F76113 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E2C1D8322DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchListViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		E2C1D8342DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchListViewController+SearchBarDelegate.swift"; sourceTree = "<group>"; };
+		E2C1D83F2DD66F8200F76113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C1D7CC2DD6262500F76113 /* Swinject in Frameworks */,
+				E2C1D8382DD66E5F00F76113 /* RswiftLibrary in Frameworks */,
 				E2C1D7D22DD6265400F76113 /* FTAPIKit in Frameworks */,
 				E2C1D7CF2DD6263000F76113 /* SwinjectAutoregistration in Frameworks */,
 			);
@@ -118,15 +122,14 @@
 		E2C1D7592DD522CC00F76113 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1D8102DD62F0300F76113 /* Presentation */,
-				E2C1D7F02DD629BA00F76113 /* Data */,
+				E2C1D7522DD522CC00F76113 /* Info.plist */,
+				E2C1D7502DD522CC00F76113 /* AppDelegate.swift */,
 				E2C1D7752DD5232400F76113 /* Core */,
+				E2C1D7F02DD629BA00F76113 /* Data */,
 				E2C1D77F2DD5232400F76113 /* DI */,
 				E2C1D7852DD5232400F76113 /* Navigation */,
-				E2C1D7502DD522CC00F76113 /* AppDelegate.swift */,
-				E2C1D7512DD522CC00F76113 /* Assets.xcassets */,
-				E2C1D7522DD522CC00F76113 /* Info.plist */,
-				E2C1D7542DD522CC00F76113 /* LaunchScreen.storyboard */,
+				E2C1D8102DD62F0300F76113 /* Presentation */,
+				E2C1D83D2DD66F7A00F76113 /* Resources */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -199,9 +202,9 @@
 		E2C1D77F2DD5232400F76113 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1D77E2DD5232400F76113 /* AppDI.swift */,
 				E2C1D7792DD5232400F76113 /* Base */,
 				E2C1D77D2DD5232400F76113 /* Features */,
-				E2C1D77E2DD5232400F76113 /* AppDI.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -218,8 +221,8 @@
 		E2C1D7852DD5232400F76113 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1D7832DD5232400F76113 /* Features */,
 				E2C1D7842DD5232400F76113 /* AppCoordinator.swift */,
+				E2C1D7832DD5232400F76113 /* Features */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -252,10 +255,10 @@
 		E2C1D8032DD62B7A00F76113 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1D8042DD62BB400F76113 /* LaunchRepository.swift */,
+				E2C1D8072DD62BC300F76113 /* DTO */,
 				E2C1D8092DD62BC800F76113 /* Endpoint */,
 				E2C1D8082DD62BC600F76113 /* Model */,
-				E2C1D8072DD62BC300F76113 /* DTO */,
-				E2C1D8042DD62BB400F76113 /* LaunchRepository.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -341,6 +344,16 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		E2C1D83D2DD66F7A00F76113 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D7542DD522CC00F76113 /* LaunchScreen.storyboard */,
+				E2C1D7512DD522CC00F76113 /* Assets.xcassets */,
+				E2C1D83E2DD66F8200F76113 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,12 +368,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				E2C1D8422DD6711800F76113 /* PBXTargetDependency */,
 			);
 			name = SpaceX;
 			packageProductDependencies = (
 				E2C1D7CB2DD6262500F76113 /* Swinject */,
 				E2C1D7CE2DD6263000F76113 /* SwinjectAutoregistration */,
 				E2C1D7D12DD6265400F76113 /* FTAPIKit */,
+				E2C1D8372DD66E5F00F76113 /* RswiftLibrary */,
 			);
 			productName = SpaceX;
 			productReference = E2C1D7382DD522BD00F76113 /* SpaceX.app */;
@@ -394,6 +409,7 @@
 				E2C1D7CA2DD6262500F76113 /* XCRemoteSwiftPackageReference "Swinject" */,
 				E2C1D7CD2DD6263000F76113 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
 				E2C1D7D02DD6265400F76113 /* XCRemoteSwiftPackageReference "FTAPIKit" */,
+				E2C1D8362DD66E5F00F76113 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E2C1D7392DD522BD00F76113 /* Products */;
@@ -411,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C1D75D2DD522CC00F76113 /* Assets.xcassets in Resources */,
+				E2C1D8402DD66F8200F76113 /* Localizable.strings in Resources */,
 				E2C1D75F2DD522CC00F76113 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +476,13 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E2C1D8422DD6711800F76113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E2C1D8412DD6711800F76113 /* RswiftGeneratePublicResources */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E2C1D7542DD522CC00F76113 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -466,6 +490,14 @@
 				E2C1D7532DD522CC00F76113 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2C1D83E2DD66F8200F76113 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C1D83F2DD66F8200F76113 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -704,6 +736,14 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		E2C1D8362DD66E5F00F76113 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -721,6 +761,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E2C1D7D02DD6265400F76113 /* XCRemoteSwiftPackageReference "FTAPIKit" */;
 			productName = FTAPIKit;
+		};
+		E2C1D8372DD66E5F00F76113 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C1D8362DD66E5F00F76113 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		E2C1D8412DD6711800F76113 /* RswiftGeneratePublicResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C1D8362DD66E5F00F76113 /* XCRemoteSwiftPackageReference "R" */;
+			productName = "plugin:RswiftGeneratePublicResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

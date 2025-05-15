@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  SpaceX
+
+  Created by Tomáš Latýn on 15.05.2025.
+  
+*/
+
+// MARK: - General
+
+"cancel" = "Cancel";
+"yes" = "Yes";
+"no" = "No";
+"try_again" = "Try Again";
+
+// MARK: - Launch List
+
+"launch_list_search_placeholder" = "Search Launches";
+"launch_sort_title" = "Sort Launches";
+"launch_sort_name_ascending" = "Name (A → Z)";
+"launch_sort_name_descending" = "Name (Z → A)";
+"launch_sort_date_ascending" = "Launch Date (Oldest First)";
+"launch_sort_date_descending" = "Launch Date (Newest First)";
+"launch_date_placeholder" = "No Launch Date";
+
+// MARK: - Launch Detail
+
+"launch_detail_info" = "Launch Info";
+"launch_detail_name" = "Name of Launch";
+"launch_detail_flight_number" = "Flight Number";
+"launch_detail_local_date" = "Local Date of Launch";
+"launch_detail_successful" = "Launch Successful";
+"launch_detail_details" = "Details";
+"launch_detail_article" = "Article";
+
+// MARK: - Error
+
+"error_general_text" = "Something went wrong. Please try again.";
+"error_connection_text" = "No internet connection. Please check your connection and try again.";

@@ -155,28 +155,28 @@ class LaunchListViewController: UIViewController {
     
     @objc private func showSortOptions() {
         let alertController = UIAlertController(
-            title: "Sort Launches",
+            title: R.string.localizable.launch_sort_title(),
             message: nil,
             preferredStyle: .actionSheet
         )
         
-        alertController.addAction(UIAlertAction(title: "Name (A → Z)", style: .default) { [weak self] _ in
+        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_name_ascending(), style: .default) { [weak self] _ in
             self?.viewModel.sortByNameAscending()
         })
         
-        alertController.addAction(UIAlertAction(title: "Name (Z → A)", style: .default) { [weak self] _ in
+        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_name_descending(), style: .default) { [weak self] _ in
             self?.viewModel.sortByNameDescending()
         })
         
-        alertController.addAction(UIAlertAction(title: "Launch Date (Oldest First)", style: .default) { [weak self] _ in
+        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_date_descending(), style: .default) { [weak self] _ in
             self?.viewModel.sortByLaunchDateAscending()
         })
         
-        alertController.addAction(UIAlertAction(title: "Launch Date (Newest First)", style: .default) { [weak self] _ in
+        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_date_ascending(), style: .default) { [weak self] _ in
             self?.viewModel.sortByLaunchDateDescending()
         })
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alertController.addAction(UIAlertAction(title: R.string.localizable.cancel(), style: .cancel))
         
         present(alertController, animated: true)
     }

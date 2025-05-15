@@ -33,27 +33,30 @@ public struct LaunchDetailView: View {
     
     private func launchInfoLayout(_ launch: LaunchModel) -> some View {
         List {
-            Section("Launch Info") {
-                listRow(title: "Name of Launch", text: launch.name)
+            Section(R.string.localizable.launch_detail_info()) {
+                listRow(title: R.string.localizable.launch_detail_name(), text: launch.name)
                 
                 if let flightNumber = launch.flightNumber {
-                    listRow(title: "Flight Number", text: flightNumber.description)
+                    listRow(title: R.string.localizable.launch_detail_flight_number(), text: flightNumber.description)
                 }
                 
                 if let date = launch.dateLocal?.formatted(date: .complete, time: .shortened) {
-                    listRow(title: "Local Date of Launch", text: date)
+                    listRow(title: R.string.localizable.launch_detail_local_date(), text: date)
                 }
                 
                 if let success = launch.success {
-                    listRow(title: "Launch Successful", text: success ? "Yes" : "No")
+                    listRow(
+                        title: R.string.localizable.launch_detail_successful(),
+                        text: success ? R.string.localizable.yes() : R.string.localizable.no()
+                    )
                 }
                 
                 if let details = launch.details {
-                    listRow(title: "Details", text: details)
+                    listRow(title: R.string.localizable.launch_detail_details(), text: details)
                 }
                 
                 if let articleLink = launch.articleLink, let url = URL(string: articleLink) {
-                    listRow(title: "Article", text: articleLink, destination: url)
+                    listRow(title: R.string.localizable.launch_detail_article(), text: articleLink, destination: url)
                 }
             }
         }

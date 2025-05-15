@@ -38,7 +38,7 @@ class ErrorView: UIView {
         errorLabel.font = .systemFont(ofSize: 16)
         
         retryButton.translatesAutoresizingMaskIntoConstraints = false
-        retryButton.setTitle("Try Again", for: .normal)
+        retryButton.setTitle(R.string.localizable.try_again(), for: .normal)
         retryButton.addTarget(self, action: #selector(retryButtonTapped), for: .touchUpInside)
         
         addSubview(errorLabel)
@@ -61,9 +61,9 @@ class ErrorView: UIView {
     func configure(type: ErrorType, retryAction: (() -> Void)?) {
         switch type {
         case .general(let message):
-            errorLabel.text = message ?? "Something went wrong. Please try again."
+            errorLabel.text = message ?? R.string.localizable.error_general_text()
         case .connection:
-            errorLabel.text = "No internet connection. Please check your connection and try again."
+            errorLabel.text = R.string.localizable.error_connection_text()
         }
         
         self.retryAction = retryAction
