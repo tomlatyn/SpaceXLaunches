@@ -12,7 +12,8 @@ import SwinjectAutoregistration
 final class FeatureAssembly: Assembly {
     func assemble(container: Container) {
         let assemblies: [Assembly] = [
-            
+            LaunchListFeature(),
+            LaunchDetailFeature()
         ]
         assemblies.forEach { $0.assemble(container: container) }
     }

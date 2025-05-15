@@ -24,6 +24,23 @@
 		E2C1D7CC2DD6262500F76113 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E2C1D7CB2DD6262500F76113 /* Swinject */; };
 		E2C1D7CF2DD6263000F76113 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = E2C1D7CE2DD6263000F76113 /* SwinjectAutoregistration */; };
 		E2C1D7D22DD6265400F76113 /* FTAPIKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2C1D7D12DD6265400F76113 /* FTAPIKit */; };
+		E2C1D7F72DD629BA00F76113 /* BaseServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D7EC2DD629BA00F76113 /* BaseServer.swift */; };
+		E2C1D8052DD62BB400F76113 /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8042DD62BB400F76113 /* LaunchRepository.swift */; };
+		E2C1D80B2DD62BD500F76113 /* EndpointGetLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D80A2DD62BD500F76113 /* EndpointGetLaunches.swift */; };
+		E2C1D80D2DD62C3A00F76113 /* LaunchDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D80C2DD62C3A00F76113 /* LaunchDTO.swift */; };
+		E2C1D80F2DD62DFB00F76113 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D80E2DD62DFB00F76113 /* LaunchModel.swift */; };
+		E2C1D8162DD62F4800F76113 /* LaunchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8152DD62F4800F76113 /* LaunchListCoordinator.swift */; };
+		E2C1D8182DD62F4C00F76113 /* LaunchListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8172DD62F4C00F76113 /* LaunchListFactory.swift */; };
+		E2C1D81A2DD62F4F00F76113 /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8192DD62F4F00F76113 /* LaunchListViewModel.swift */; };
+		E2C1D81D2DD62F5300F76113 /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D81C2DD62F5300F76113 /* LaunchListView.swift */; };
+		E2C1D81F2DD62FD900F76113 /* LaunchListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D81E2DD62FD900F76113 /* LaunchListFeature.swift */; };
+		E2C1D8212DD6300000F76113 /* LaunchListCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8202DD6300000F76113 /* LaunchListCoordinatorImpl.swift */; };
+		E2C1D8232DD6302800F76113 /* LaunchDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8222DD6302800F76113 /* LaunchDetailCoordinator.swift */; };
+		E2C1D8252DD6302B00F76113 /* LaunchDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8242DD6302B00F76113 /* LaunchDetailFactory.swift */; };
+		E2C1D8272DD6302F00F76113 /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8262DD6302F00F76113 /* LaunchDetailViewModel.swift */; };
+		E2C1D82A2DD6303300F76113 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8292DD6303300F76113 /* LaunchDetailView.swift */; };
+		E2C1D82C2DD6306C00F76113 /* LaunchDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D82B2DD6306C00F76113 /* LaunchDetailFeature.swift */; };
+		E2C1D82E2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D82D2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +60,23 @@
 		E2C1D7782DD5232400F76113 /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
 		E2C1D77E2DD5232400F76113 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
 		E2C1D7842DD5232400F76113 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E2C1D7EC2DD629BA00F76113 /* BaseServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServer.swift; sourceTree = "<group>"; };
+		E2C1D8042DD62BB400F76113 /* LaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
+		E2C1D80A2DD62BD500F76113 /* EndpointGetLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointGetLaunches.swift; sourceTree = "<group>"; };
+		E2C1D80C2DD62C3A00F76113 /* LaunchDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDTO.swift; sourceTree = "<group>"; };
+		E2C1D80E2DD62DFB00F76113 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		E2C1D8152DD62F4800F76113 /* LaunchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinator.swift; sourceTree = "<group>"; };
+		E2C1D8172DD62F4C00F76113 /* LaunchListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListFactory.swift; sourceTree = "<group>"; };
+		E2C1D8192DD62F4F00F76113 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
+		E2C1D81C2DD62F5300F76113 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
+		E2C1D81E2DD62FD900F76113 /* LaunchListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListFeature.swift; sourceTree = "<group>"; };
+		E2C1D8202DD6300000F76113 /* LaunchListCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinatorImpl.swift; sourceTree = "<group>"; };
+		E2C1D8222DD6302800F76113 /* LaunchDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailCoordinator.swift; sourceTree = "<group>"; };
+		E2C1D8242DD6302B00F76113 /* LaunchDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailFactory.swift; sourceTree = "<group>"; };
+		E2C1D8262DD6302F00F76113 /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
+		E2C1D8292DD6303300F76113 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
+		E2C1D82B2DD6306C00F76113 /* LaunchDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailFeature.swift; sourceTree = "<group>"; };
+		E2C1D82D2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailCoordinatorImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +112,8 @@
 		E2C1D7592DD522CC00F76113 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1D8102DD62F0300F76113 /* Presentation */,
+				E2C1D7F02DD629BA00F76113 /* Data */,
 				E2C1D7752DD5232400F76113 /* Core */,
 				E2C1D77F2DD5232400F76113 /* DI */,
 				E2C1D7852DD5232400F76113 /* Navigation */,
@@ -147,6 +183,8 @@
 		E2C1D77D2DD5232400F76113 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1D81E2DD62FD900F76113 /* LaunchListFeature.swift */,
+				E2C1D82B2DD6306C00F76113 /* LaunchDetailFeature.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -164,6 +202,8 @@
 		E2C1D7832DD5232400F76113 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1D8202DD6300000F76113 /* LaunchListCoordinatorImpl.swift */,
+				E2C1D82D2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -175,6 +215,113 @@
 				E2C1D7842DD5232400F76113 /* AppCoordinator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E2C1D7EA2DD629BA00F76113 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8032DD62B7A00F76113 /* Launch */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E2C1D7ED2DD629BA00F76113 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D7EC2DD629BA00F76113 /* BaseServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		E2C1D7F02DD629BA00F76113 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D7EA2DD629BA00F76113 /* Repository */,
+				E2C1D7ED2DD629BA00F76113 /* Server */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E2C1D8032DD62B7A00F76113 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8092DD62BC800F76113 /* Endpoint */,
+				E2C1D8082DD62BC600F76113 /* Model */,
+				E2C1D8072DD62BC300F76113 /* DTO */,
+				E2C1D8042DD62BB400F76113 /* LaunchRepository.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		E2C1D8072DD62BC300F76113 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D80C2DD62C3A00F76113 /* LaunchDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		E2C1D8082DD62BC600F76113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D80E2DD62DFB00F76113 /* LaunchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2C1D8092DD62BC800F76113 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D80A2DD62BD500F76113 /* EndpointGetLaunches.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		E2C1D8102DD62F0300F76113 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8142DD62F3E00F76113 /* LaunchDetail */,
+				E2C1D8132DD62F3A00F76113 /* LaunchList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E2C1D8132DD62F3A00F76113 /* LaunchList */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8152DD62F4800F76113 /* LaunchListCoordinator.swift */,
+				E2C1D8172DD62F4C00F76113 /* LaunchListFactory.swift */,
+				E2C1D8192DD62F4F00F76113 /* LaunchListViewModel.swift */,
+				E2C1D81B2DD62F5000F76113 /* View */,
+			);
+			path = LaunchList;
+			sourceTree = "<group>";
+		};
+		E2C1D8142DD62F3E00F76113 /* LaunchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8222DD6302800F76113 /* LaunchDetailCoordinator.swift */,
+				E2C1D8242DD6302B00F76113 /* LaunchDetailFactory.swift */,
+				E2C1D8262DD6302F00F76113 /* LaunchDetailViewModel.swift */,
+				E2C1D8282DD6302F00F76113 /* View */,
+			);
+			path = LaunchDetail;
+			sourceTree = "<group>";
+		};
+		E2C1D81B2DD62F5000F76113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D81C2DD62F5300F76113 /* LaunchListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2C1D8282DD6302F00F76113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8292DD6303300F76113 /* LaunchDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,18 +405,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C1D8272DD6302F00F76113 /* LaunchDetailViewModel.swift in Sources */,
 				E2C1D75A2DD522CC00F76113 /* AppDelegate.swift in Sources */,
 				E2C1D7882DD5232400F76113 /* AppCoordinator.swift in Sources */,
+				E2C1D8232DD6302800F76113 /* LaunchDetailCoordinator.swift in Sources */,
 				E2C1D7892DD5232400F76113 /* Globals.swift in Sources */,
+				E2C1D81A2DD62F4F00F76113 /* LaunchListViewModel.swift in Sources */,
 				E2C1D78A2DD5232400F76113 /* CoreAssembly.swift in Sources */,
 				E2C1D78F2DD5232400F76113 /* FeatureAssembly.swift in Sources */,
+				E2C1D81D2DD62F5300F76113 /* LaunchListView.swift in Sources */,
+				E2C1D8252DD6302B00F76113 /* LaunchDetailFactory.swift in Sources */,
 				E2C1D7902DD5232400F76113 /* CoordinatorImpl.swift in Sources */,
 				E2C1D7912DD5232400F76113 /* RESTClient.swift in Sources */,
+				E2C1D82A2DD6303300F76113 /* LaunchDetailView.swift in Sources */,
 				E2C1D7932DD5232400F76113 /* RepositoryAssembly.swift in Sources */,
 				E2C1D7962DD5232400F76113 /* BaseViewState.swift in Sources */,
 				E2C1D7982DD5232400F76113 /* Coordinator.swift in Sources */,
 				E2C1D79B2DD5232400F76113 /* AppDI.swift in Sources */,
+				E2C1D8162DD62F4800F76113 /* LaunchListCoordinator.swift in Sources */,
+				E2C1D80B2DD62BD500F76113 /* EndpointGetLaunches.swift in Sources */,
+				E2C1D7F72DD629BA00F76113 /* BaseServer.swift in Sources */,
+				E2C1D8052DD62BB400F76113 /* LaunchRepository.swift in Sources */,
+				E2C1D82E2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift in Sources */,
+				E2C1D8182DD62F4C00F76113 /* LaunchListFactory.swift in Sources */,
+				E2C1D80F2DD62DFB00F76113 /* LaunchModel.swift in Sources */,
 				E2C1D79C2DD5232400F76113 /* BasicError.swift in Sources */,
+				E2C1D80D2DD62C3A00F76113 /* LaunchDTO.swift in Sources */,
+				E2C1D8212DD6300000F76113 /* LaunchListCoordinatorImpl.swift in Sources */,
+				E2C1D82C2DD6306C00F76113 /* LaunchDetailFeature.swift in Sources */,
+				E2C1D81F2DD62FD900F76113 /* LaunchListFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

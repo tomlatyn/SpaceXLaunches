@@ -19,18 +19,22 @@ final class AppCoordinatorImpl: CoordinatorImpl, AppCoordinator {
     
     // MARK: - Properties
     
+    private let launchListFactory: LaunchListFactory
+    
     // MARK: - Lifecycle
     
-    override init(
-        navigationController: UINavigationController
+    init(
+        navigationController: UINavigationController,
+        launchListFactory: LaunchListFactory
     ) {
+        self.launchListFactory = launchListFactory
         super.init(navigationController: navigationController)
     }
     
     // MARK: - Implementation
     
     override func start() {
-        navigationController.viewControllers = [UIHostingController(rootView: AnyView(Text("Hello")))]
+        launchListFactory.coordinator.start()
     }
     
 }

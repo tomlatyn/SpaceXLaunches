@@ -14,10 +14,12 @@ final class CoreAssembly: Assembly {
         let navigationController = UINavigationController()
         container.register(AppCoordinator.self) { r in
             AppCoordinatorImpl(
-                navigationController: navigationController
+                navigationController: navigationController,
+                launchListFactory: r.resolve(LaunchListFactory.self)!
             )
         }.inObjectScope(.container)
         
-        container.autoregister(RESTClient.self, initializer: RESTClientImpl.init)
+        container.autoregister(BaseServer.self, initializer: BaseServer.init).inObjectScope(.container)
+        container.autoregister(RESTClient.self, initializer: RESTClientImpl.init).inObjectScope(.container)
     }
 }
