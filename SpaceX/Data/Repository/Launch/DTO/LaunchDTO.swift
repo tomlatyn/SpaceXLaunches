@@ -11,17 +11,16 @@ struct LaunchDTO: Codable {
     let id: String
     let success: Bool?
     let details: String?
-    let crew: [Crew]
-    let launchpad: String
     let flightNumber: Int?
     let name: String
     let dateUnix: Int?
     let dateLocal: String?
+    let links: Links?
 
-    // MARK: - Crew
+    // MARK: - Links
     
-    struct Crew: Codable {
-        let crew, role: String
+    struct Links: Codable {
+        let article: String?
     }
 }
 
@@ -35,11 +34,11 @@ extension LaunchDTO {
             id: id,
             success: success,
             details: details,
-            launchpad: launchpad,
             flightNumber: flightNumber,
             name: name,
             dateUnix: dateUnix,
-            dateLocal: dateLocal == nil ? nil : dateFormatter.date(from: dateLocal!)
+            dateLocal: dateLocal == nil ? nil : dateFormatter.date(from: dateLocal!),
+            articleLink: links?.article
         )
     }
 }

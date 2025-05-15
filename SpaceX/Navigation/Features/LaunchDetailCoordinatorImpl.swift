@@ -29,12 +29,11 @@ final class LaunchDetailCoordinatorImpl: LaunchDetailCoordinator {
     
     func start(_ launch: LaunchModel) {
         let vc = UIHostingController(rootView: factory.resolveView(launch))
+        vc.title = launch.name
         appCoordinator.navigationController.pushViewController(vc, animated: true)
     }
     
     func navigate(_ path: LaunchDetailPath) {
-        switch path {
         
-        }
     }
 }

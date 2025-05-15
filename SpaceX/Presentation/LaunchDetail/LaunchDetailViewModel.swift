@@ -13,8 +13,6 @@ public final class LaunchDetailViewModel: ObservableObject {
     
     let launch: LaunchModel
     
-    // MARK: - Published properties
-    
     // MARK: - Lifecycle
     
     public nonisolated init(
@@ -22,7 +20,5 @@ public final class LaunchDetailViewModel: ObservableObject {
     ) {
         self.launch = launch
     }
-    
-    // MARK: -
     
 }
