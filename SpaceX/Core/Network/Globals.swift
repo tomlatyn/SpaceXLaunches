@@ -1,22 +1,11 @@
 //
 //  Globals.swift
-//  VisitBRNO
+//  SpaceX
 //
 //  Created by Tomáš Latýn on 03.05.2025.
 //
 
 import Foundation
-
-public func withRetry<T>(
-    maxAttempts: UInt = 3,
-    _ perform: @escaping (@escaping (Error) async throws -> T) async throws -> T
-) async throws -> T {
-    func retry(error: Error, attempt: UInt) async throws -> T {
-        guard attempt < maxAttempts else { throw error }
-        return try await perform { try await retry(error: $0, attempt: attempt + 1) }
-    }
-    return try await perform { try await retry(error: $0, attempt: 0) }
-}
 
 public func exponentialBackoff(
     interval: Int,

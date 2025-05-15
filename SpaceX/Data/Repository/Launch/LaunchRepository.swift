@@ -11,6 +11,8 @@ public protocol LaunchRepository: AnyObject {
     func getLaunches() async throws -> [LaunchModel]
 }
 
+// MARK: - Implementation
+
 public final class LaunchRepositoryImpl: LaunchRepository {
     
     // MARK: - Instance properties

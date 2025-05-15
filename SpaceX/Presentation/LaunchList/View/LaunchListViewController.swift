@@ -109,8 +109,6 @@ class LaunchListViewController: UIViewController {
     }
     
     func setupNavigationBar() {
-        self.title = "Launch list"
-        
         let sortButton = UIBarButtonItem(
             image: UIImage(systemName: "line.3.horizontal.decrease.circle"),
             style: .plain,

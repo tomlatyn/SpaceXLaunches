@@ -1,6 +1,6 @@
 //
 //  BaseViewState.swift
-//  VisitBRNO
+//  SpaceX
 //
 //  Created by Tomáš Latýn on 04.05.2025.
 //

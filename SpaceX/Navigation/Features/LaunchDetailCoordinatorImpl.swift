@@ -34,6 +34,8 @@ final class LaunchDetailCoordinatorImpl: LaunchDetailCoordinator {
     }
     
     func navigate(_ path: LaunchDetailPath) {
+        switch path {
         
+        }
     }
 }

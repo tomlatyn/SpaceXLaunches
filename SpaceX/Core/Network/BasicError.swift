@@ -1,6 +1,6 @@
 //
 //  BasicError.swift
-//  VisitBRNO
+//  SpaceX
 //
 //  Created by Tomáš Latýn on 03.05.2025.
 //
@@ -14,12 +14,10 @@ public enum ConnectionError: Error {
 }
 
 public enum GeneralError: Error {
-    case notFound(_ message: String = "")
     case unknown(_ message: String = "")
 }
 
 public enum MappingError: Error {
     case decoding(_ message: String)
     case encoding(_ message: String)
-    case unexpectedNil(_ message: String)
 }
