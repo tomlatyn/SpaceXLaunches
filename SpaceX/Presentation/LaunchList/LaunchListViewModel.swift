@@ -13,6 +13,7 @@ class LaunchListViewModel {
     // MARK: - Properties
     
     private let launchRepository: LaunchRepository
+    private let preferencesRepository: PreferencesRepository
     
     var viewState: BaseViewState = .loading {
         didSet {
@@ -49,9 +50,11 @@ class LaunchListViewModel {
     // MARK: - Lifecycle
     
     init(
-        launchRepository: LaunchRepository
+        launchRepository: LaunchRepository,
+        preferencesRepository: PreferencesRepository
     ) {
         self.launchRepository = launchRepository
+        self.preferencesRepository = preferencesRepository
     }
     
     // MARK: - Data Methods
@@ -62,6 +65,16 @@ class LaunchListViewModel {
         
         viewState = await .newViewState {
             self.launches = try await launchRepository.getLaunches()
+            switch preferencesRepository.launchSortType {
+            case .dateAscending:
+                sortByLaunchDateAscending()
+            case .dateDescending:
+                sortByLaunchDateDescending()
+            case .nameAscending:
+                sortByNameAscending()
+            case .nameDescending:
+                sortByNameDescending()
+            }
         }
     }
     
@@ -69,10 +82,12 @@ class LaunchListViewModel {
     
     func sortByNameAscending() {
         launches.sort { $0.name.lowercased() < $1.name.lowercased() }
+        preferencesRepository.launchSortType = .nameAscending
     }
     
     func sortByNameDescending() {
         launches.sort { $0.name.lowercased() > $1.name.lowercased() }
+        preferencesRepository.launchSortType = .nameDescending
     }
     
     func sortByLaunchDateAscending() {
@@ -81,6 +96,7 @@ class LaunchListViewModel {
             guard let secondDate = $1.dateLocal else { return true }
             return firstDate < secondDate
         }
+        preferencesRepository.launchSortType = .dateAscending
     }
     
     func sortByLaunchDateDescending() {
@@ -89,6 +105,7 @@ class LaunchListViewModel {
             guard let secondDate = $1.dateLocal else { return true }
             return firstDate > secondDate
         }
+        preferencesRepository.launchSortType = .dateDescending
     }
     
     // MARK: - Search Methods

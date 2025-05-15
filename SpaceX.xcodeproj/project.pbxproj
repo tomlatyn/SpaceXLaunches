@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22497152DD675D800594B44 /* PreferencesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22497142DD675D800594B44 /* PreferencesRepository.swift */; };
 		E2C1D75A2DD522CC00F76113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D7502DD522CC00F76113 /* AppDelegate.swift */; };
 		E2C1D75D2DD522CC00F76113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C1D7512DD522CC00F76113 /* Assets.xcassets */; };
 		E2C1D75F2DD522CC00F76113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C1D7542DD522CC00F76113 /* LaunchScreen.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E22497142DD675D800594B44 /* PreferencesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesRepository.swift; sourceTree = "<group>"; };
 		E2C1D7382DD522BD00F76113 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C1D7502DD522CC00F76113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C1D7512DD522CC00F76113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22497132DD675C400594B44 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				E22497142DD675D800594B44 /* PreferencesRepository.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		E2C1D72F2DD522BD00F76113 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +240,7 @@
 		E2C1D7EA2DD629BA00F76113 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				E22497132DD675C400594B44 /* Preferences */,
 				E2C1D8032DD62B7A00F76113 /* Launch */,
 			);
 			path = Repository;
@@ -440,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C1D8272DD6302F00F76113 /* LaunchDetailViewModel.swift in Sources */,
+				E22497152DD675D800594B44 /* PreferencesRepository.swift in Sources */,
 				E2C1D75A2DD522CC00F76113 /* AppDelegate.swift in Sources */,
 				E2C1D7882DD5232400F76113 /* AppCoordinator.swift in Sources */,
 				E2C1D8232DD6302800F76113 /* LaunchDetailCoordinator.swift in Sources */,
