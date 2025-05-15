@@ -32,7 +32,7 @@
 		E2C1D8162DD62F4800F76113 /* LaunchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8152DD62F4800F76113 /* LaunchListCoordinator.swift */; };
 		E2C1D8182DD62F4C00F76113 /* LaunchListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8172DD62F4C00F76113 /* LaunchListFactory.swift */; };
 		E2C1D81A2DD62F4F00F76113 /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8192DD62F4F00F76113 /* LaunchListViewModel.swift */; };
-		E2C1D81D2DD62F5300F76113 /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D81C2DD62F5300F76113 /* LaunchListView.swift */; };
+		E2C1D81D2DD62F5300F76113 /* LaunchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D81C2DD62F5300F76113 /* LaunchListViewController.swift */; };
 		E2C1D81F2DD62FD900F76113 /* LaunchListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D81E2DD62FD900F76113 /* LaunchListFeature.swift */; };
 		E2C1D8212DD6300000F76113 /* LaunchListCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8202DD6300000F76113 /* LaunchListCoordinatorImpl.swift */; };
 		E2C1D8232DD6302800F76113 /* LaunchDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8222DD6302800F76113 /* LaunchDetailCoordinator.swift */; };
@@ -41,6 +41,9 @@
 		E2C1D82A2DD6303300F76113 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8292DD6303300F76113 /* LaunchDetailView.swift */; };
 		E2C1D82C2DD6306C00F76113 /* LaunchDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D82B2DD6306C00F76113 /* LaunchDetailFeature.swift */; };
 		E2C1D82E2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D82D2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift */; };
+		E2C1D8312DD6588E00F76113 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8302DD6588E00F76113 /* ErrorView.swift */; };
+		E2C1D8332DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8322DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift */; };
+		E2C1D8352DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1D8342DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +71,7 @@
 		E2C1D8152DD62F4800F76113 /* LaunchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinator.swift; sourceTree = "<group>"; };
 		E2C1D8172DD62F4C00F76113 /* LaunchListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListFactory.swift; sourceTree = "<group>"; };
 		E2C1D8192DD62F4F00F76113 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
-		E2C1D81C2DD62F5300F76113 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
+		E2C1D81C2DD62F5300F76113 /* LaunchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewController.swift; sourceTree = "<group>"; };
 		E2C1D81E2DD62FD900F76113 /* LaunchListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListFeature.swift; sourceTree = "<group>"; };
 		E2C1D8202DD6300000F76113 /* LaunchListCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinatorImpl.swift; sourceTree = "<group>"; };
 		E2C1D8222DD6302800F76113 /* LaunchDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailCoordinator.swift; sourceTree = "<group>"; };
@@ -77,6 +80,9 @@
 		E2C1D8292DD6303300F76113 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
 		E2C1D82B2DD6306C00F76113 /* LaunchDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailFeature.swift; sourceTree = "<group>"; };
 		E2C1D82D2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailCoordinatorImpl.swift; sourceTree = "<group>"; };
+		E2C1D8302DD6588E00F76113 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E2C1D8322DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchListViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		E2C1D8342DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchListViewController+SearchBarDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 		E2C1D7742DD5232400F76113 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1D82F2DD6588800F76113 /* UIKit */,
 				E2C1D76E2DD5232400F76113 /* State */,
 			);
 			path = UI;
@@ -311,7 +318,9 @@
 		E2C1D81B2DD62F5000F76113 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1D81C2DD62F5300F76113 /* LaunchListView.swift */,
+				E2C1D81C2DD62F5300F76113 /* LaunchListViewController.swift */,
+				E2C1D8322DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift */,
+				E2C1D8342DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +331,14 @@
 				E2C1D8292DD6303300F76113 /* LaunchDetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E2C1D82F2DD6588800F76113 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1D8302DD6588E00F76113 /* ErrorView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,7 +430,7 @@
 				E2C1D81A2DD62F4F00F76113 /* LaunchListViewModel.swift in Sources */,
 				E2C1D78A2DD5232400F76113 /* CoreAssembly.swift in Sources */,
 				E2C1D78F2DD5232400F76113 /* FeatureAssembly.swift in Sources */,
-				E2C1D81D2DD62F5300F76113 /* LaunchListView.swift in Sources */,
+				E2C1D81D2DD62F5300F76113 /* LaunchListViewController.swift in Sources */,
 				E2C1D8252DD6302B00F76113 /* LaunchDetailFactory.swift in Sources */,
 				E2C1D7902DD5232400F76113 /* CoordinatorImpl.swift in Sources */,
 				E2C1D7912DD5232400F76113 /* RESTClient.swift in Sources */,
@@ -423,13 +440,16 @@
 				E2C1D7982DD5232400F76113 /* Coordinator.swift in Sources */,
 				E2C1D79B2DD5232400F76113 /* AppDI.swift in Sources */,
 				E2C1D8162DD62F4800F76113 /* LaunchListCoordinator.swift in Sources */,
+				E2C1D8352DD65D4800F76113 /* LaunchListViewController+SearchBarDelegate.swift in Sources */,
 				E2C1D80B2DD62BD500F76113 /* EndpointGetLaunches.swift in Sources */,
 				E2C1D7F72DD629BA00F76113 /* BaseServer.swift in Sources */,
 				E2C1D8052DD62BB400F76113 /* LaunchRepository.swift in Sources */,
 				E2C1D82E2DD6307500F76113 /* LaunchDetailCoordinatorImpl.swift in Sources */,
+				E2C1D8332DD65D2100F76113 /* LaunchListViewController+TableViewDelegate.swift in Sources */,
 				E2C1D8182DD62F4C00F76113 /* LaunchListFactory.swift in Sources */,
 				E2C1D80F2DD62DFB00F76113 /* LaunchModel.swift in Sources */,
 				E2C1D79C2DD5232400F76113 /* BasicError.swift in Sources */,
+				E2C1D8312DD6588E00F76113 /* ErrorView.swift in Sources */,
 				E2C1D80D2DD62C3A00F76113 /* LaunchDTO.swift in Sources */,
 				E2C1D8212DD6300000F76113 /* LaunchListCoordinatorImpl.swift in Sources */,
 				E2C1D82C2DD6306C00F76113 /* LaunchDetailFeature.swift in Sources */,

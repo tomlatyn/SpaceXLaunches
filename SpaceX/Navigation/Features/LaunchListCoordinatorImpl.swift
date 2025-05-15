@@ -31,7 +31,7 @@ final class LaunchListCoordinatorImpl: LaunchListCoordinator {
     // MARK: - Navigation
     
     func start() {
-        let vc = UIHostingController(rootView: factory.resolveView())
+        let vc = factory.resolveViewController()
         appCoordinator.navigationController.pushViewController(vc, animated: false)
     }
     

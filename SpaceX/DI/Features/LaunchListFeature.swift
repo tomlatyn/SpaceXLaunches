@@ -35,12 +35,10 @@ final class LaunchListFactoryImpl: LaunchListFactory {
         resolver.resolve(LaunchListCoordinator.self)!
     }
     
-    func resolveView() -> AnyView {
-        AnyView(
-            LaunchListView(
-                viewModel: resolver.resolve(LaunchListViewModel.self)!,
-                coordinator: coordinator
-            )
+    func resolveViewController() -> UIViewController {
+        LaunchListViewController(
+            viewModel: resolver.resolve(LaunchListViewModel.self)!,
+            coordinator: coordinator
         )
     }
 }

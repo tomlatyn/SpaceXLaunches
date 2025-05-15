@@ -6,33 +6,104 @@
 //
 
 import Foundation
+import Combine
 
-public final class LaunchListViewModel: ObservableObject {
+class LaunchListViewModel {
     
     // MARK: - Properties
     
     private let launchRepository: LaunchRepository
     
-    // MARK: - Published properties
+    var viewState: BaseViewState = .loading {
+        didSet {
+            onStateChanged?(viewState)
+        }
+    }
     
-    @Published var viewState = BaseViewState.loading
-    @Published var launches: [LaunchModel] = []
+    var launches: [LaunchModel] = [] {
+        didSet {
+            if searchQuery.isEmpty {
+                filteredLaunches = launches
+            } else {
+                performSearch(query: searchQuery)
+            }
+            onDataChanged?()
+        }
+    }
+    
+    var filteredLaunches: [LaunchModel] = [] {
+        didSet {
+            onDataChanged?()
+        }
+    }
+    
+    var searchQuery: String = "" {
+        didSet {
+            performSearch(query: searchQuery)
+        }
+    }
+    
+    var onDataChanged: (() -> Void)?
+    var onStateChanged: ((BaseViewState) -> Void)?
     
     // MARK: - Lifecycle
     
-    public nonisolated init(
+    init(
         launchRepository: LaunchRepository
     ) {
         self.launchRepository = launchRepository
     }
     
-    // MARK: -
+    // MARK: - Data Methods
     
-    @MainActor
     func loadData() async {
+        viewState = .loading
+        onStateChanged?(viewState)
+        
         viewState = await .newViewState {
             self.launches = try await launchRepository.getLaunches()
         }
     }
     
+    // MARK: - Sort Methods
+    
+    func sortByNameAscending() {
+        launches.sort { $0.name.lowercased() < $1.name.lowercased() }
+    }
+    
+    func sortByNameDescending() {
+        launches.sort { $0.name.lowercased() > $1.name.lowercased() }
+    }
+    
+    func sortByLaunchDateAscending() {
+        launches.sort {
+            guard let firstDate = $0.dateLocal else { return false }
+            guard let secondDate = $1.dateLocal else { return true }
+            return firstDate < secondDate
+        }
+    }
+    
+    func sortByLaunchDateDescending() {
+        launches.sort {
+            guard let firstDate = $0.dateLocal else { return false }
+            guard let secondDate = $1.dateLocal else { return true }
+            return firstDate > secondDate
+        }
+    }
+    
+    // MARK: - Search Methods
+    
+    func search(query: String) {
+        searchQuery = query
+    }
+    
+    private func performSearch(query: String) {
+        if query.isEmpty {
+            filteredLaunches = launches
+        } else {
+            filteredLaunches = launches.filter {
+                $0.name.localizedCaseInsensitiveContains(query)
+            }
+        }
+    }
 }

@@ -10,5 +10,5 @@ import SwiftUI
 
 public protocol LaunchListFactory: AnyObject {
     @MainActor var coordinator: LaunchListCoordinator { get }
-    @MainActor func resolveView() -> AnyView
+    @MainActor func resolveViewController() -> UIViewController
 }
