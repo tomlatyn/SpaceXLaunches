@@ -32,7 +32,7 @@ final class LaunchListCoordinatorImpl: LaunchListCoordinator {
     
     func start() {
         let vc = factory.resolveViewController()
-        vc.title = "Launch List"
+        vc.title = R.string.localizable.launch_list_title()
         appCoordinator.navigationController.pushViewController(vc, animated: false)
     }
     

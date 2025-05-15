@@ -101,7 +101,7 @@ class LaunchListViewController: UIViewController {
     func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Launches"
+        searchController.searchBar.placeholder = R.string.localizable.launch_list_search_placeholder()
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -168,11 +168,11 @@ class LaunchListViewController: UIViewController {
             self?.viewModel.sortByNameDescending()
         })
         
-        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_date_descending(), style: .default) { [weak self] _ in
+        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_date_ascending(), style: .default) { [weak self] _ in
             self?.viewModel.sortByLaunchDateAscending()
         })
         
-        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_date_ascending(), style: .default) { [weak self] _ in
+        alertController.addAction(UIAlertAction(title: R.string.localizable.launch_sort_date_descending(), style: .default) { [weak self] _ in
             self?.viewModel.sortByLaunchDateDescending()
         })
         
